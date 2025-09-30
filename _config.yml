@@ -1,8 +1,12 @@
-baseurl: "/zolan" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# -------------------------------------------------------------
+# GitHub Pages Custom Domain (kcontents.site) 설정
+# -------------------------------------------------------------
+baseurl: ""                 # 커스텀 도메인 사용 시 반드시 "" (빈 문자열)으로 설정합니다.
+url: "https://kcontents.site" # 블로그의 전체 주소를 HTTPS 포함하여 입력합니다.
 
-
-# Build settings
+# -------------------------------------------------------------
+# Build settings (나머지 설정은 그대로 유지)
+# -------------------------------------------------------------
 markdown: kramdown
 permalink: pretty
 plugins:
@@ -13,7 +17,6 @@ plugins:
 paginate: 5
 paginate_path: "/page/:num"
 
-
 # Pages Path
 defaults:
   - scope:
@@ -23,7 +26,6 @@ defaults:
 
 include:
   - _pages
-
 
 # Tags
 tag_page_dir:         tag
