@@ -1,15 +1,71 @@
 # -------------------------------------------------------------
-# GitHub Pages Custom Domain (kcontents.site) 설정
+# General Site Settings (사이트 기본 설정)
 # -------------------------------------------------------------
-baseurl: ""                 # 커스텀 도메인 사용 시 반드시 "" (빈 문자열)으로 설정합니다.
-url: "https://kcontents.site" # 블로그의 전체 주소를 HTTPS 포함하여 입력합니다.
+title: K-Contents Hub
+logo: logo.png
+description: Curating and explaining Korea’s vibrant cultural contents for a global audience.
 
 # -------------------------------------------------------------
-# Build settings (나머지 설정은 그대로 유지)
+# Author Settings (작성자 정보 설정)
+# -------------------------------------------------------------
+author:
+  name: KH Lee
+  image: profile.jpg
+  say-hello: Hello, I’m <strong>KH Lee</strong>, a K-Contents Curator.
+  bio: |
+    I am dedicated to curating and explaining Korea’s vibrant cultural contents for a global audience.
+    Through K-Contents Hub, I introduce K-POP, K-Drama, and Korean cultural trends in clear English so that fans around the world can easily enjoy and understand them.
+    My goal is to provide reliable insights, highlight the beauty of Korean contents, and connect international readers with Korea’s creative wave.
+
+# -------------------------------------------------------------
+# Contact links (소셜 미디어 연결)
+# -------------------------------------------------------------
+# 실제 운영하는 소셜 미디어 주소를 입력하세요. 없으면 비워두거나 '#' 처리합니다.
+# twitter: https://twitter.com/your_kcontents_id
+# facebook:
+# dribbble:
+# instagram: https://instagram.com/your_kcontents_id
+# pinterest:
+
+# -------------------------------------------------------------
+# Comment Section (Disqus 댓글 기능)
+# -------------------------------------------------------------
+disqus-identifier:
+
+# -------------------------------------------------------------
+# Instagram Feed (인스타그램 피드 연동)
+# -------------------------------------------------------------
+instafeed: false
+instagram-profile:
+
+# -------------------------------------------------------------
+# Google Analytics (구글 애널리틱스)
+# -------------------------------------------------------------
+# [수정] 불필요한 주석 기호('#')를 제거하여 깔끔하게 정리했습니다.
+google-analytics: G-5808KZ346C
+
+# -------------------------------------------------------------
+# Newsletter (뉴스레터 구독)
+# -------------------------------------------------------------
+
+
+# =============================================================
+# [중요] 아래 빌드 설정은 수정하지 마세요.
+# =============================================================
+
+# -------------------------------------------------------------
+# GitHub Pages Custom Domain (kcontents.site) 설정
+# -------------------------------------------------------------
+baseurl: ""
+url: "https://kcontents.site"
+
+# -------------------------------------------------------------
+# Build settings
 # -------------------------------------------------------------
 markdown: kramdown
 permalink: pretty
 plugins:
+  # [수정] 올바른 공백 문자로 들여쓰기를 수정했습니다.
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll/tagging
@@ -17,8 +73,8 @@ plugins:
 paginate: 5
 paginate_path: "/page/:num"
 
-# Pages Path
 defaults:
+  # [수정] 올바른 공백 문자로 들여쓰기를 수정했습니다.
   - scope:
       path: '_pages'
     values:
@@ -27,11 +83,12 @@ defaults:
 include:
   - _pages
 
-# Tags
+# [수정] 올바른 공백 문자로 들여쓰기를 수정했습니다.
 tag_page_dir:         tag
 tag_page_layout:      tag_page
 tag_permalink_style:  pretty
 
 sass:
+  # [수정] 올바른 공백 문자로 들여쓰기를 수정했습니다.
   sass_dir: _sass
   style: compressed
