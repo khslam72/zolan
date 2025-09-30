@@ -15,11 +15,32 @@ layout: default
 
 <div class="container">
 	<div class="row">
-	{% if site.posts.size > 0 %}
-		{% for post in paginator.posts %}
-			{% include article-content.html %}
-		{% endfor %}
-	{% endif %}
+		<div class="col col-12">
+			<div class="post-list">
+				{% for post in paginator.posts %}
+				<article class="post-item">
+					{% if post.image %}
+					<a href="{{ post.url | relative_url }}" class="post-thumbnail">
+						<img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+					</a>
+					{% endif %}
+
+					<div class="post-content">
+						<h2 class="post-title">
+							<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+						</h2>
+						<div class="post-meta">
+							<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+						</div>
+						<p class="post-excerpt">
+							{{ post.excerpt | strip_html | truncatewords: 30 }}
+						</p>
+						<a href="{{ post.url | relative_url }}" class="read-more">Keep Reading →</a>
+					</div>
+				</article>
+				{% endfor %}
+			</div>
+		</div>
 	</div>
 </div>
 {% include pagination.html %}
