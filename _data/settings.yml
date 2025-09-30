@@ -1,44 +1,39 @@
-#-------------------------------
+# -------------------------------
 # General Site Settings
-title: Zolan
-logo: logo.svg # You can add own logo.
-description: Zolan is modern minimal theme for Jekyll
+title: K-Contents Hub
+logo: # site icon.png # 로고 파일이 있다면 경로를 입력하세요 
+description: K-Contents Hub shares K-POP MV analysis, lyrics, and Korean culture in English for global fans.
 
 
 #-------------------------------
 # Author Settings
 author:
-  name: Alex Rodriguez
-  image: 01.jpg
-  say-hello: Hello, I’m <strong>Alex Rodriguez</strong>
-  bio: Designs, talks, and writes about <strong>web</strong>, <strong>ethics</strong>, <strong>privacy</strong>, and dev. I share design tutorials, free resources and inspiration. Loves <a href="#">music</a> & riding his bicycle.
+  name: K-Contents Curator
+  image: # 01.jpg # 이미지 파일 경로를 입력하세요 (현재는 비워둡니다).
+  say-hello: Hello! I'm <strong>K-Contents Hub</strong>
+  bio: Your go-to source for deep analysis of <strong>K-POP</strong> MVs, lyrics, and cultural insights. Join the global fan discussion!
 
 
 #-------------------------------
-# Contact links
-twitter: https://twitter.com/ # Add your Twitter handle
-facebook: https://facebook.com/ # Add your Facebook handle
-dribbble: https://dribbble.com/ # Add your Dribbble handle
-instagram: https://instagram.com/ # Add your Instagram handle
-pinterest: https://pinterest.com/ # Add your Pinterest handle
+# Contact links (팔로우/소셜 미디어 링크)
 
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier: # 여기에 Disqus Shortname을 입력하여 댓글 기능을 활성화하세요.
 
 
 #-------------------------------
 # Instagram Feed
-instafeed: # To enable the instafeed, use the value true. To turn off use the value false.
-instagram-profile: artemsheludko_ # Add instagram username
+instafeed: false # 인스타그램 피드를 사용하지 않을 경우 false로 설정합니다.
+instagram-profile: # 인스타그램 피드를 사용하지 않으므로 비워둡니다.
 
 
 #-------------------------------
 # Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1.
+google-analytics: # 여기에 Google Analytics 추적 ID (UA-XXXXX)를 입력하세요.
 
 
 #-------------------------------
 # Newsletter
-mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+mailchimp: # 뉴스레터 서비스를 사용하지 않으면 비워둡니다.
